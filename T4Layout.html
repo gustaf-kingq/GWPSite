@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+@*Used this youtube tutorial for plenty of help: https://www.youtube.com/watch?v=gqOEoUR5RHg or for just future reference*@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width = device_width, initial-scale = 1" />
+    <title>Index</title>
+
+
+@*<style>
+    .jumbotron{
+        background-color:#2E2D88;
+        color: white;
+    }
+
+    .tab-content{
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        padding: 100px;
+    }
+
+    .nav-tabs{
+        margin-bottom: 0;
+    }
+
+</style>*@
+
+</head>
+<body>
+    <div class="container">
+        <div class="btn-group btn-group-lg" role="group">
+            @*<button type="button" class="btn btn-default">Home</button>*@
+            <a href="http://localhost:50349/Index" class="btn btn-default">Home</a>
+            <a href="About" class="btn btn-default">About me</a>
+            <a href="Contact" class="btn btn-default">Contacts</a>
+        </div>
+
+
+         @RenderBody()
+    </div>
+
+
+
+   
+    @*Added the CSS links*@
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/StyleSheet1.css" rel="stylesheet" />
+    @*Added the JS links*@
+    <script src="~/scripts/bootstrap.min.js"></script>
+    <script src="~/scripts/jquery-1.9.1.min.js"></script>
+
+</body>
+</html>
